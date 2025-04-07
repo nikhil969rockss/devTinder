@@ -3,7 +3,7 @@ const app =express();
 const connectToDB = require('./DbConnection')
 const PORT = 3005;
 const User = require('./models/UserSchema')
-const URI = "mongodb+srv://nikhil969work:Y8haIdnS6DfY93vy@learnmongo.1ubda.mongodb.net/devTInder"
+const URI = process.env.DATA_BASE_URI;
 
 connectToDB(URI).then(()=>{
   app.listen(PORT,()=>console.log(`Your server is running on PORT-> ${PORT}`))

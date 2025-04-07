@@ -1,10 +1,12 @@
+require('dotenv').config();
 const express =require('express')
 const app = express();
 const connectToDB = require('./DBConnection')
 const User = require('./UserSchema')
 
+
 const port = 3000;
-const URI = "mongodb+srv://nikhil969work:Y8haIdnS6DfY93vy@learnmongo.1ubda.mongodb.net/devTInder"
+const URI = process.env.DATA_BASE_URI;
 
 connectToDB(URI).then(()=>{
 console.log(`Database connection established`);

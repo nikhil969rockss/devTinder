@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -5,7 +6,7 @@ const connectToDb = require('./DbConnection')
 const User = require("./UserSchema")
 const {validateSignup,validateUpdate} = require("./helper/helper")
 
-const URI = "mongodb+srv://nikhil969work:Y8haIdnS6DfY93vy@learnmongo.1ubda.mongodb.net/devTInder"
+const URI = process.env.DATA_BASE_URI;
 
 
 

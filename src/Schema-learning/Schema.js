@@ -3,7 +3,7 @@ const app =  express();
 const connectToDB = require('./DbConnection')
 const User = require('./models/UserSchema')
 
-const URI = "mongodb+srv://nikhil969work:Y8haIdnS6DfY93vy@learnmongo.1ubda.mongodb.net/devTInder"
+const URI = process.env.DATA_BASE_URI;
 const PORT = 3003;
 
 connectToDB(URI).then(()=>{

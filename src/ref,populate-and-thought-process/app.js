@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const app = express()
 const port = 3000;
@@ -8,7 +9,7 @@ const profileRouter = require('./routes/profileRouter');
 const connectionRouter = require('./routes/connectionRequestRouter');
 const userRouter = require('./routes/userRouter');
 
-const URI = "mongodb+srv://nikhil969work:Y8haIdnS6DfY93vy@learnmongo.1ubda.mongodb.net/devTInder"
+const URI = process.env.DATA_BASE_URI;
 
 connectionToDatabase(URI).then(()=>{
   console.log(`connection to database established`);
