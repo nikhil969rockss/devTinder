@@ -1,7 +1,7 @@
 {
   "name": "learning-node",
   "version": "1.0.0",
-  "description": "Larning node",
+  "description": "Learning node",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.js"
@@ -13,6 +13,11 @@
   "author": "Nikhil",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.4",
+    "validator": "^13.15.0"
   }
 }

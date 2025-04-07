@@ -1,0 +1,11 @@
+- Explore the SchemaType options from the documentation✅
+- Add required, unique, lowercase,min, minLength, maxLength, trim✅
+- Add default in the Schema✅
+- Create a custom validate function for gender in SchemaType✅
+- Improve the DB Schema - Put all the appropriate validations on each field in the schema✅
+- Add timestamps to the Schema✅
+- Add API Level validation on PATCH request & POST Signup request✅
+- DATA SANITIZING. Add API validation for each field
+- Install validator✅
+- Explore validator library functions and use validator functions for password, email and photoURL✅
+- NEVER TRUST req.body

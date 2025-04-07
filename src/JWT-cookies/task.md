@@ -1,0 +1,6 @@
+- Install cookie-cooker✅
+- just send a dummy cookie to user✅
+- Create GET/profile API and check if you get the cookie back
+- Install jsonwebtoken
+-In Login API, after email and password validation create a JWT token and send it to user in cookies
+-read the cookies inside your profile API and find the logged in user
